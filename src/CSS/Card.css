@@ -1,14 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-}
-
-.infoSection {
-  background-color: blue;
-  width: 15rem;
-}
-
-.aboutSection {
-  background-color: rgb(140, 168, 38);
-  width: 15rem;
+  height: auto;
+  width: auto;
+  background-color: aqua;
+  justify-content: right;
 }
