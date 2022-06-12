@@ -2,17 +2,16 @@ import React from "react";
 import "../CSS/Card.css";
 import "../CSS/Info.css";
 import headshot from "../Images/Headshot.jpg";
-import Popup from "reactjs-popup";
+import linkedinLogo from "../Images/linkedin.png";
 
-this.state = {
-  message: "",
-};
+function showSnackbar() {
+  const x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
 
-const handleEvent = (event) => {
-  if (event.type === "mousedown") {
-    this.setState({ message: "Copied to clipboard!" });
-  }
-};
 export default function Info() {
   return (
     <div className="infoSection">
@@ -23,22 +22,22 @@ export default function Info() {
       </div>
       <div id="button-section">
         <button
-          className="button"
+          className="email-but"
           onClick={() => {
             navigator.clipboard.writeText("ianfund117@gmail.com");
+            showSnackbar();
           }}
-          onMouseDown={this.handleEvent}
         >
           Left
         </button>
-        <a
-          className="button"
-          href="https://www.linkedin.com/in/ian-fund/"
-          target="_blank"
-        >
-          <button>Right</button>
+        <a href="https://www.linkedin.com/in/ian-fund/" target="_blank">
+          <button className="linked-butt">
+            <img id="linkedin-logo" src={linkedinLogo} alt="Linkedin Logo" />
+            Linkedin
+          </button>
         </a>
       </div>
+      <div id="snackbar">Email address copied to clipboard!</div>
     </div>
   );
 }
