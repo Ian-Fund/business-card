@@ -1,19 +1,35 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .infoSection {
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1a1b21;
+  color: white;
+  padding-top: 0%;
 }
 
-.aboutSection {
-  background-color: rgb(140, 168, 38);
-  width: 15rem;
+h2 {
+  padding: 0;
+  margin: 0;
 }
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+#name-job-section > h2 {
+  color: #f3bf99;
+  /* padding: 0; */
+}
+
 img {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: auto;
+  max-width: auto;
 }
 
 #name-job-section {
@@ -21,6 +37,8 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 #button-section {
@@ -28,8 +46,8 @@ img {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  width: auto;
 }
-
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
   visibility: hidden; /* Hidden by default. Visible on click */
@@ -110,12 +128,15 @@ img {
 } */
 
 #button-section > button {
-  background-color: #5093e2;
-  width: 115px;
+  background-color: white;
+  width: 150px;
   height: 34px;
   left: 283px;
   top: 468px;
-  color: aquamarine;
+  color: black;
+  border: none;
+  margin-right: 20px;
+  border-radius: 2px;
 }
 
 #button-section > a > button {
@@ -126,18 +147,32 @@ img {
   align-items: center;
   padding: 9px 13px 9px 11px;
   gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
 
-  width: 115px;
+  width: 150px;
   height: 34px;
   left: 283px;
   top: 468px;
 }
-
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 #button-section > img {
-  width: 25px;
-  height: 25px;
+  /* width: 5px;
+  height: 25px; */
 }
 
 #linkedin-logo {
   background-color: #fff;
+}
+
+#headshot {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }

@@ -1,8 +1,9 @@
 import React from "react";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Info from "./Components/Info";
-import Interests from "./Components/Interests";
+import About from "./About";
+import Footer from "./Footer";
+import Info from "./Info";
+import Interests from "./Interests";
+import "../CSS/Card.css";
 
 export default function Card() {
   return (

@@ -1,9 +1,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: auto;
-  width: auto;
-  background-color: aqua;
-  justify-content: right;
+  height: 40%;
+  width: 40%;
+  background-color: #1a1b21;
+  /* justify-content: right; */
   margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  color: white;
 }

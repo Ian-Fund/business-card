@@ -1,8 +1,9 @@
 import React from "react";
+import "../CSS/Interests.css";
 
 export default function Interests() {
   return (
-    <div className="interest-s`ection">
+    <div className="interest-section">
       <h3>Interests</h3>
       <p>
         Af whatever man bun, paleo sustainable yes plz selvage craft beer

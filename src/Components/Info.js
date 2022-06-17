@@ -3,6 +3,7 @@ import "../CSS/Card.css";
 import "../CSS/Info.css";
 import headshot from "../Images/Headshot.jpg";
 import linkedinLogo from "../Images/linkedin.png";
+import emailLogo from "../Images/email.png";
 
 function showSnackbar() {
   const x = document.getElementById("snackbar");
@@ -28,6 +29,7 @@ export default function Info() {
             showSnackbar();
           }}
         >
+          <img id="email-logo" src={emailLogo} alt="Email Logo" />
           Left
         </button>
         <a href="https://www.linkedin.com/in/ian-fund/" target="_blank">
